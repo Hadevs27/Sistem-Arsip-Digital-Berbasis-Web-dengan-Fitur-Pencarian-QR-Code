@@ -26,15 +26,7 @@ export default auth((req) => {
     }
   }
   
-  // Protect create/edit for PIMPINAN
-  if (role === 'PIMPINAN') {
-    if (nextUrl.pathname.startsWith('/arsip/create') || 
-        nextUrl.pathname.match(/^\/arsip\/[^\/]+\/edit$/) ||
-        nextUrl.pathname.startsWith('/kategori')
-    ) {
-      return NextResponse.redirect(new URL('/dashboard', nextUrl));
-    }
-  }
+
 
   return null;
 });

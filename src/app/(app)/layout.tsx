@@ -77,7 +77,7 @@ export default async function AppLayout({
                   await signOut({ redirectTo: "/login" });
                 }}
               >
-                <Button variant="ghost" size="icon" className="text-neutral-500 hover:text-danger hover:bg-danger/10 rounded-full h-10 w-10 transition-colors">
+                <Button type="submit" variant="ghost" size="icon" className="text-neutral-500 hover:text-danger hover:bg-danger/10 rounded-full h-10 w-10 transition-colors">
                   <LogOut className="h-5 w-5" />
                 </Button>
               </form>

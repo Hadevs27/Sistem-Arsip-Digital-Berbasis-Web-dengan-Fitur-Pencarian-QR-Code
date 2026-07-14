@@ -10,7 +10,7 @@ export async function createUser(formData: FormData) {
   const nama = formData.get("nama") as string;
   const username = formData.get("username") as string;
   const password = formData.get("password") as string;
-  const role = formData.get("role") as "ADMIN" | "PEGAWAI" | "PIMPINAN";
+  const role = formData.get("role") as "ADMIN" | "PEGAWAI";
 
   if (!nama || !username || !password || !role) throw new Error("Semua field wajib diisi");
 

@@ -14,9 +14,9 @@ export default async function AppLayout({
   const role = session?.user?.role;
 
   const navItems = [
-    { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard, roles: ["ADMIN", "PEGAWAI", "PIMPINAN"] },
-    { name: "Arsip", href: "/arsip", icon: FileText, roles: ["ADMIN", "PEGAWAI", "PIMPINAN"] },
-    { name: "Scan QR", href: "/scan", icon: QrCode, roles: ["ADMIN", "PEGAWAI", "PIMPINAN"] },
+    { name: "Dashboard", href: "/dashboard", icon: LayoutDashboard, roles: ["ADMIN", "PEGAWAI"] },
+    { name: "Arsip", href: "/arsip", icon: FileText, roles: ["ADMIN", "PEGAWAI"] },
+    { name: "Scan QR", href: "/scan", icon: QrCode, roles: ["ADMIN", "PEGAWAI"] },
     { name: "Kategori", href: "/kategori", icon: Tags, roles: ["ADMIN", "PEGAWAI"] },
     { name: "Pengguna", href: "/admin/users", icon: Users, roles: ["ADMIN"] },
     { name: "Log Aktivitas", href: "/logs", icon: Activity, roles: ["ADMIN"] },

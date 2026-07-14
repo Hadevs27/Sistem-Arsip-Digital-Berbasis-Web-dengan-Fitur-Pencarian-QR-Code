@@ -72,7 +72,6 @@ Pengelolaan arsip manual pada kantor pemerintahan cenderung lambat, boros ruang,
 
 * Pegawai arsip
 * Admin sistem
-* Pimpinan / pejabat terkait
 
 ### Persona 1: Admin
 
@@ -80,11 +79,7 @@ Mengelola semua data arsip, pengguna, dan konfigurasi sistem.
 
 ### Persona 2: Pegawai Arsip
 
-Menginput arsip, mengunggah file, dan melakukan pencarian arsip.
-
-### Persona 3: Pimpinan
-
-Melihat data arsip dan membuka dokumen melalui hasil pencarian atau QR Code.
+Menginput arsip, mengunggah file, dan melakukan pencarian arsip, serta melihat data arsip dan membuka dokumen.
 
 ---
 
@@ -290,7 +285,6 @@ Mencari arsip berdasarkan metadata.
 left to right direction
 actor Admin
 actor "Pegawai Arsip" as Pegawai
-actor Pimpinan
 
 rectangle "Sistem Arsip Digital QR" {
   usecase "Login" as UC1
@@ -319,12 +313,7 @@ Pegawai --> UC8
 Pegawai --> UC9
 Pegawai --> UC10
 Pegawai --> UC11
-
-Pimpinan --> UC1
-Pimpinan --> UC8
-Pimpinan --> UC9
-Pimpinan --> UC10
-Pimpinan --> UC12
+Pegawai --> UC12
 
 UC2 .> UC3 : <<include>>
 UC2 .> UC4 : <<include>>

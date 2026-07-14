@@ -41,7 +41,6 @@ export default async function AdminUsersPage() {
               </SelectTrigger>
               <SelectContent>
                 <SelectItem value="PEGAWAI">Pegawai</SelectItem>
-                <SelectItem value="PIMPINAN">Pimpinan</SelectItem>
                 <SelectItem value="ADMIN">Admin</SelectItem>
               </SelectContent>
             </Select>
@@ -75,7 +74,6 @@ export default async function AdminUsersPage() {
                   <TableCell className="py-4">
                     <span className={`inline-flex items-center rounded-full px-2.5 py-0.5 text-xs font-medium ring-1 ring-inset ${
                       user.role === 'ADMIN' ? 'bg-danger/10 text-danger ring-danger/20' :
-                      user.role === 'PIMPINAN' ? 'bg-orange-50 text-orange-700 ring-orange-700/20' :
                       'bg-primary-50 text-primary-700 ring-primary-700/20'
                     }`}>
                       {user.role}
